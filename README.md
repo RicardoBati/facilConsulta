@@ -137,7 +137,7 @@ Passando no body um json
 #### Atualizar paciente / Para atualizar um paciente, deverá ser feito uma requisição informando o dados que serão atualizados para
 
 ```http
-  PUT /pacientes/{id_paciente}
+  POST /pacientes/{id_paciente}
 ```
 
 Passando no body um json
