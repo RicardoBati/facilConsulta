@@ -6,7 +6,6 @@ use App\Exceptions\GeneralJsonException;
 use App\Models\Medico_paciente;
 use App\Models\Medico;
 use App\Models\Paciente;
-use Exception;
 use Illuminate\Http\Request;
 
 class MedicoPacientesRepository {

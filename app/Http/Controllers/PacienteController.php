@@ -3,8 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Paciente;
-use Illuminate\Support\Facades\DB;
 use App\Repository\PacienteRepository;
 
 

@@ -3,7 +3,7 @@
 namespace App\Repository;
 
 use App\Exceptions\GeneralJsonException;
-use App\Http\Controllers\MedicoController;
+use App\Models\Cidades;
 use App\Models\Medico;
 use Illuminate\Http\Request;
 
@@ -26,10 +26,11 @@ class MedicoRepository {
 
     public function listaMedicoCidade(int $cidade_id) : string {
 
-        //Verifica se foi passado o ID da cidade
-        throw_if(!$cidade_id, GeneralJsonException::class, 'Erro ao buscar médicos por cidade');
+        //Verifica se existe a cidade
+        $cidades = Cidades::find($cidade_id);
+        throw_if(!$cidades, GeneralJsonException::class, 'Cidade não cadastrada');
 
-        //Retorna a cidade do ID correspondente
+        //Retorna os medicos da cidade do ID correspondente
         return Medico::where('cidade_id',$cidade_id)->get();
     }
 

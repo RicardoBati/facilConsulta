@@ -2,9 +2,7 @@
     
 namespace App\Repository;
 
-use App\Http\Controllers\CidadesController;
 use App\Models\Cidades;
-use Illuminate\Http\Request;
 
 
 class CidadesRepository {

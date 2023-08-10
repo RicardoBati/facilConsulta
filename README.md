@@ -1,5 +1,5 @@
 
-# Fácil consulta
+# Fácil Consulta
 
 API em Laravel
 
@@ -20,9 +20,9 @@ sail artisan tinker
 ```
 Dentro do artisan tinker executar
 ```bash
-user::factory()->create()
+User::factory()->create()
 ```
-Irá retornar um usuario autenticado, guardar email e senha para usar do passo a seguir
+Irá retornar um usuario autenticado, guardar o email (senha por padrão é 'password') para usar no passo a seguir
     
 ## Documentação da API
 

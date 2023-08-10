@@ -3,9 +3,7 @@
 namespace App\Repository;
 
 use App\Exceptions\GeneralJsonException;
-use App\Http\Controllers\PacienteController;
 use App\Models\Paciente;
-use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 

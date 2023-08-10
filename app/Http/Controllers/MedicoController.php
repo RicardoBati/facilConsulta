@@ -1,14 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Medico;
-use App\Models\Medico_paciente;
 use App\Repository\MedicoRepository;
 use App\Repository\MedicoPacientesRepository;
-use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
-use Symfony\Component\HttpFoundation\JsonResponse as HttpFoundationJsonResponse;
 
 class MedicoController extends Controller
 {
